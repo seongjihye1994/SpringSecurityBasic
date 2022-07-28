@@ -19,7 +19,7 @@ import com.cos.securityex01.config.auth.PrincipalDetails;
 import com.cos.securityex01.model.User;
 import com.cos.securityex01.repository.UserRepository;
 
-@Controller
+@Controller // view를 리턴하겠다. 만약 RestController 이면 view 리턴 x
 public class IndexController {
 
 	@Autowired
@@ -30,6 +30,9 @@ public class IndexController {
 
 	@GetMapping({ "", "/" })
 	public @ResponseBody String index() {
+
+		// 머스테치 기본 폴더 : src/main/resources/
+		// 뷰리졸버 설정 : templates (prefix), .mustache (suffix) ,
 		return "인덱스 페이지입니다.";
 	}
 

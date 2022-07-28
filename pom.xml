@@ -23,7 +23,7 @@
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-mustache</artifactId>
+			<artifactId>spring-boot-starter-mustache</artifactId> <!-- 스프링부트 머스태치 dependency 설정 시, application.yml 에 프리픽스, 서픽스 설정 안해줘도 됨. -->
 		</dependency>
 
 		<dependency>
